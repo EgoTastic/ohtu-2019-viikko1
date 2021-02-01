@@ -92,7 +92,7 @@ public class VarastoTest {
     public void otaLiianVahan() {
     	varasto.lisaaVarastoon(5);
     	varasto.otaVarastosta(-1);
-    	assertEquals(5, varasto.getSaldo(), vertailuTarkkuus);
+    	assertEquals(4, varasto.getSaldo(), vertailuTarkkuus);
     }
     
     @Test
