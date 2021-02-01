@@ -1,3 +1,8 @@
 /build/
 /.gradle/
 /*.tmp
+/.project
+/.settings
+.DS_STORE
+/bin/
+/.classpath
