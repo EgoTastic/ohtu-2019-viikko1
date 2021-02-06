@@ -25,6 +25,6 @@ jobs:
     - name: Code coverage rapost
       run: ./gradlew jacocoTestReport
     - name: Checkstyle testing
-      run: .gradlew checkstyleMain
+      run: ./gradlew checkstyleMain
     - name: Data to codecov
       run: bash <(curl -s https://codecov.io/bash)
