@@ -24,14 +24,17 @@ public class Varasto {
         {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
+        setSaldo(alkuSaldo);
+    }
         
+    public void setSaldo(double alkuSaldo) {
         if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
-        } else if (alkuSaldo <= tilavuus) // mahtuu
+        } else if (alkuSaldo <= this.tilavuus) // mahtuu
         {
             this.saldo = alkuSaldo;
         } else {
-            this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
+            this.saldo = this.tilavuus;  // täyteen ja ylimäärä hukkaan!
         }
     }
 
